@@ -18,6 +18,9 @@
     <title>Portfolio BTS SIO | Nassim CHEBELAINE</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
+    
+<!-- Principal Fichier CSS Template -->
+<link href="styles.css" rel="stylesheet">
   
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   
@@ -37,8 +40,6 @@
 <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
 <link href="node_modules/swiper/swiper-bundle.min.css" rel="stylesheet">
   
-<!-- Principal Fichier CSS Template -->
-<link href="styles.css" rel="stylesheet">
   
 <!-- Liens JS  -->
 <script src="main.js"></script>
@@ -68,26 +69,9 @@
   <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
   
   <!-- ======= Header ======= -->
-  <header id="header">
+  <header id="header" >
     <div class="d-flex flex-column">
       <div class="profile">
-  
-        <!-- Bouton de connexion -->
-        <button style="color: white;" onmouseover="this.style.color='red'" onmouseout="this.style.color='white'" id="logout-btn" class="btn">
-          <i class="bi bi-box-arrow-in-right"></i>
-          Connexion
-        </button>
-  
-        <script style="margin-bottom: 1px">
-          // Fonction de gestionnaire d'événement pour le clic du bouton
-          function logout() {
-            // Rediriger vers la nouvelle URL
-            window.location.href = 'login.html';
-          }
-          // Ajouter un écouteur d'événements au bouton de déconnexion
-          let logoutBtn = document.getElementById("logout-btn");
-          logoutBtn.addEventListener("click", logout);
-        </script>
   
         <br><br>
   
@@ -427,30 +411,29 @@
           </div>
         </div>
         <br>
-        <section style="border-radius: 15px; background-image: url(portfolio/img/background/background.png)" class="portfolio section-bg">
+        <section style="border-radius: 15px; background-image: url(images/background.png)" class="portfolio section-bg">
           <div class="container">
             <div class="row" data-aos="fade-up">
               <div class="col-lg-12 d-flex justify-content-center cours-complets">
                 <ul style="background: linear-gradient( to top,#040b14, #3a3a3b)" id="portfolio-flters-1">
                   <li  data-filter="*" class="filter-active">Tous</li>
+                  <li data-filter=".filter-pix">PIX</li>
                   <li data-filter=".filter-linux">LINUX</li>
                   <li data-filter=".filter-cisco">CISCO</li>
                   <li data-filter=".filter-anssi">MOOC ANSSI</li>
                   <li data-filter=".filter-cnil">MOOC RGPD CNIL</li>
-                  <li data-filter=".filter-sololearn">SOLOLEARN</li>
-                  <li data-filter=".filter-google">GOOGLE</li>
                 </ul>
               </div>
             </div>
   
              <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
               
-              <div class="col-lg-4 col-md-6 portfolio-item">
+              <div class="col-lg-4 col-md-6 portfolio-item filter-pix">
                 <div style="box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5)" class="portfolio-wrap container-img">
-                  <img src="portfolio/img/diplômes%20-%20certifications/Certification-PIX-cut.png" class="img-fluid" alt="">
+                  <img src="images/attestation-pix-20241209 crop.jpg" class="img-fluid" alt="">
                   <div class="portfolio-links">
-                    <a href="portfolio/img/diplômes%20-%20certifications/Certification-PIX.png" class="portfolio-lightbox" title="Certification PIX <br> Obtenue en 2ème année de BTS SIO  (Mars 2022)."><i class="bi bi-eye-fill"></i> <h6>Détails</h6></a>
-                    <a href="portfolio/img/diplômes%20-%20certifications/Certification-PIX.pdf" target="_blank">
+                    <a href="images/attestation-pix-20241209.jpg" class="portfolio-lightbox" title="Certification PIX <br> Obtenue en 2ème année de BTS SIO  (Décembre 2024)."><i class="bi bi-eye-fill"></i> <h6>Détails</h6></a>
+                    <a href="certifs/attestation-pix-20241209.pdf" target="_blank">
                       <i class="bi bi-download"></i> <h6>Ouvrir en PDF</h6>
                     </a>
                   </div>
@@ -458,10 +441,10 @@
               </div>
               <div class="col-lg-4 col-md-6 portfolio-item filter-linux">
                 <div style="box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5)" class="portfolio-wrap container-img">
-                  <img src="portfolio/img/diplômes%20-%20certifications/MRT-LINUX-CERTIFICATE.jpg" class="img-fluid" alt="">
+                  <img src="./images/Partner-_NDG_Linux_Unhatched_certificate_page-0001.jpg" class="img-fluid" alt="">
                   <div class="portfolio-links">
-                    <a href="portfolio/img/diplômes%20-%20certifications/MRT-LINUX-CERTIFICATE.jpg" class="portfolio-lightbox" title="Certification NDG Linux Unhatched <br> Obtenue en 1ère année de BTS SIO (Janvier 2023)."><i class="bi bi-eye-fill"></i> <h6>Détails</h6></a>
-                    <a href="portfolio/img/diplômes%20-%20certifications/MRT-LINUX-CERTIFICATE.pdf" target="_blank">
+                    <a href="./images/Partner-_NDG_Linux_Unhatched_certificate_page-0001.jpg" class="portfolio-lightbox" title="Certification PIX <br> Obtenue en 2ème année de BTS SIO  (Décembre 2024)."><i class="bi bi-eye-fill"></i> <h6>Détails</h6></a>
+                    <a href="./certifs/Partner-_NDG_Linux_Unhatched_certificate.pdf" target="_blank">
                       <i class="bi bi-download"></i> <h6>Ouvrir en PDF</h6>
                     </a>
                   </div>
@@ -469,10 +452,10 @@
               </div>
               <div class="col-lg-4 col-md-6 portfolio-item filter-cisco">
                 <div style="box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5)" class="portfolio-wrap container-img">
-                  <img src="portfolio/img/diplômes%20-%20certifications/Certification-CISCO-Computer-Hardware-Basics-Badge.jpg" class="img-fluid" alt="">
+                  <img src="images/EnglishforIT1-NassimChebelaine-20250321.jpg" class="img-fluid" alt="">
                   <div class="portfolio-links">
-                    <a href="portfolio/img/diplômes%20-%20certifications/Certification-CISCO-Computer-Hardware-Basics-Badge.jpg" class="portfolio-lightbox" title="Certification CISCO Computer-Hardware-Basics-Badge <br> Obtenue en 2ème année de BTS SIO (Septembre 2023)."><i class="bi bi-eye-fill"></i> <h6>Détails</h6></a>
-                    <a href="portfolio/img/diplômes%20-%20certifications/Certification-CISCO-Computer-Hardware-Basics-Badge.pdf" target="_blank">
+                    <a href="images/EnglishforIT1-NassimChebelaine-20250321.jpg" class="portfolio-lightbox" title="Certification English for IT 1 <br> Obtenue en 2ème année de BTS SIO (Mars 2025)."><i class="bi bi-eye-fill"></i> <h6>Détails</h6></a>
+                    <a href="certifs/EnglishforIT1-NassimChebelaine-20250321.pdf" target="_blank">
                       <i class="bi bi-download"></i> <h6>Ouvrir en PDF</h6>
                     </a>
                   </div>
@@ -480,10 +463,32 @@
               </div>
               <div class="col-lg-4 col-md-6 portfolio-item filter-cisco">
                 <div style="box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5)" class="portfolio-wrap container-img">
-                  <img src="portfolio/img/diplômes%20-%20certifications/Certification-CISCO-Introduction-to-Cybersecurity-Badge.png" class="img-fluid" alt="">
+                  <img src="images/CCNAITN-NassimChebelaine-2025032.jpg" class="img-fluid" alt="">
                   <div class="portfolio-links">
-                    <a href="portfolio/img/diplômes%20-%20certifications/Certification-CISCO-Introduction-to-Cybersecurity-Badge.png" class="portfolio-lightbox" title="Certification CISCO Introduction-to-Cybersecurity-Badge <br> Obtenue en 2ème année de BTS SIO (Novembre 2023)."><i class="bi bi-eye-fill"></i> <h6>Détails</h6></a>
-                    <a href="portfolio/img/diplômes%20-%20certifications/Certification-CISCO-Introduction-to-Cybersecurity-Badge.pdf" target="_blank">
+                    <a href="images/CCNAITN-NassimChebelaine-2025032.jpg" class="portfolio-lightbox" title="Certification CISCO CCNA Introduction au réseau <br> Obtenue en 1ère année de BTS SIO (Mai 2024)."><i class="bi bi-eye-fill"></i> <h6>Détails</h6></a>
+                    <a href="certifs/CCNAITN-NassimChebelaine-2025032.pdf" target="_blank">
+                      <i class="bi bi-download"></i> <h6>Ouvrir en PDF</h6>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 portfolio-item filter-cisco">
+                <div style="box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5)" class="portfolio-wrap container-img">
+                  <img src="./images/I2CSUpdate20250321-26-205ktt_page-0001.jpg" class="img-fluid" alt="">
+                  <div class="portfolio-links">
+                    <a href="./images/I2CSUpdate20250321-26-205ktt_page-0001.jpg" class="portfolio-lightbox" title="Certification CISCO Introduction-to-Cybersecurity-Badge <br> Obtenue en 2ème année de BTS SIO (2025)."><i class="bi bi-eye-fill"></i> <h6>Détails</h6></a>
+                    <a href="./certifs/I2CSUpdate20250321-26-205ktt.pdf" target="_blank">
+                      <i class="bi bi-download"></i> <h6>Ouvrir en PDF</h6>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 portfolio-item filter-anssi">
+                <div style="box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5)" class="portfolio-wrap container-img">
+                  <img src="./images/certif_mooc_ansii1032025_page-0001.jpg" class="img-fluid" alt="">
+                  <div class="portfolio-links">
+                    <a href="./images/certif_mooc_ansii1032025_page-0001.jpg" class="portfolio-lightbox" title="Certification de SecNumacadémie des MOOC de l'ANSSI <br> Obtenue en 2ème année de BTS SIO (Novembre 2023)."><i class="bi bi-eye-fill"></i> <h6>Détails</h6></a>
+                    <a href="./certifs/certif_mooc_ansii1032025.pdf" target="_blank">
                       <i class="bi bi-download"></i> <h6>Ouvrir en PDF</h6>
                     </a>
                   </div>
@@ -495,17 +500,6 @@
                   <div class="portfolio-links">
                     <a href="portfolio/img/diplômes%20-%20certifications/Certification-CISCO%20-Introduction-to-Packet-Tracer-Badge.png" class="portfolio-lightbox" title="Certification CISCO Introduction-to-Packet-Tracer-Badge <br> Obtenue en 2ème année de BTS SIO (Février 2024)."><i class="bi bi-eye-fill"></i> <h6>Détails</h6></a>
                     <a href="portfolio/img/diplômes%20-%20certifications/Certification-CISCO%20-Introduction-to-Packet-Tracer-Badge.pdf" target="_blank">
-                      <i class="bi bi-download"></i> <h6>Ouvrir en PDF</h6>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6 portfolio-item filter-anssi">
-                <div style="box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5)" class="portfolio-wrap container-img">
-                  <img src="portfolio/img/diplômes%20-%20certifications/MOOC-ANSSI.png" class="img-fluid" alt="">
-                  <div class="portfolio-links">
-                    <a href="portfolio/img/diplômes%20-%20certifications/MOOC-ANSSI.png" class="portfolio-lightbox" title="Certification de SecNumacadémie des MOOC de l'ANSSI <br> Obtenue en 2ème année de BTS SIO (Novembre 2023)."><i class="bi bi-eye-fill"></i> <h6>Détails</h6></a>
-                    <a href="portfolio/img/diplômes%20-%20certifications/MOOC-ANSSI.pdf" target="_blank">
                       <i class="bi bi-download"></i> <h6>Ouvrir en PDF</h6>
                     </a>
                   </div>
@@ -561,62 +555,6 @@
                   <div class="portfolio-links">
                     <a href="portfolio/img/diplômes%20-%20certifications/Certificat%20de%20suivi%20-%20MODULE%205.png" class="portfolio-lightbox" title="Certification des MOOC de la CNIL <br> Obtenue en 2ème année de BTS SIO (Février 2024)."><i class="bi bi-eye-fill"></i> <h6>Détails</h6></a>
                     <a href="portfolio/img/diplômes%20-%20certifications/Certificat%20de%20suivi%20-%20MODULE%205.pdf" target="_blank">
-                      <i class="bi bi-download"></i> <h6>Ouvrir en PDF</h6>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6 portfolio-item filter-sololearn">
-                <div style="box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5)" class="portfolio-wrap container-img">
-                  <img src="portfolio/img/diplômes%20-%20certifications/Introduction-to-HTML.png" class="img-fluid" alt="">
-                  <div class="portfolio-links">
-                    <a href="portfolio/img/diplômes%20-%20certifications/Introduction-to-HTML.png" class="portfolio-lightbox" title="Certification SOLOLEARN Introduction to HTML. <br> Obtenue en 2ème année de BTS SIO (Novembre 2023)."><i class="bi bi-eye-fill"></i> <h6>Détails</h6></a>
-                    <a href="portfolio/img/diplômes%20-%20certifications/Introduction-to-HTML.pdf" target="_blank">
-                      <i class="bi bi-download"></i> <h6>Ouvrir en PDF</h6>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6 portfolio-item filter-sololearn">
-                <div style="box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5)" class="portfolio-wrap container-img">
-                  <img src="portfolio/img/diplômes%20-%20certifications/Introduction-to-CSS.png" class="img-fluid" alt="">
-                  <div class="portfolio-links">
-                    <a href="portfolio/img/diplômes%20-%20certifications/Introduction-to-CSS.png" class="portfolio-lightbox" title="Certification SOLOLEARN Introduction to CSS. <br> Obtenue en 2ème année de BTS SIO (Novembre 2023)."><i class="bi bi-eye-fill"></i> <h6>Détails</h6></a>
-                    <a href="portfolio/img/diplômes%20-%20certifications/Introduction-to-CSS.pdf" target="_blank">
-                      <i class="bi bi-download"></i> <h6>Ouvrir en PDF</h6>
-                    </a>
-                  </div>
-                </div>
-              </div>
-  
-              <div class="col-lg-4 col-md-6 portfolio-item filter-sololearn">
-                <div style="box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5)" class="portfolio-wrap container-img">
-                  <img src="portfolio/img/diplômes%20-%20certifications/Introduction-to-Python.jpg" class="img-fluid" alt="">
-                  <div class="portfolio-links">
-                    <a href="portfolio/img/diplômes%20-%20certifications/Introduction-to-Python.jpg" class="portfolio-lightbox" title="Certification SOLOLEARN Introduction to Python. <br> Obtenue en 2ème année de BTS SIO (Novembre 2023)."><i class="bi bi-eye-fill"></i> <h6>Détails</h6></a>
-                    <a href="portfolio/img/diplômes%20-%20certifications/Introduction-to-Python.pdf" target="_blank">
-                      <i class="bi bi-download"></i> <h6>Ouvrir en PDF</h6>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6 portfolio-item filter-sololearn">
-                <div style="box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5)" class="portfolio-wrap container-img">
-                  <img src="portfolio/img/diplômes%20-%20certifications/Introduction-to-JavaScript.jpg" class="img-fluid" alt="">
-                  <div class="portfolio-links">
-                    <a href="portfolio/img/diplômes%20-%20certifications/Introduction-to-JavaScript.jpg" class="portfolio-lightbox" title="Certification SOLOLEARN Introduction to JavaScript. <br> Obtenue en 2ème année de BTS SIO (Novembre 2023)."><i class="bi bi-eye-fill"></i> <h6>Détails</h6></a>
-                    <a href="portfolio/img/diplômes%20-%20certifications/Introduction-to-JavaScript.pdf" target="_blank">
-                      <i class="bi bi-download"></i> <h6>Ouvrir en PDF</h6>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6 portfolio-item filter-google">
-                <div style="box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5)" class="portfolio-wrap container-img">
-                  <img src="portfolio/img/diplômes%20-%20certifications/Google-Cybersecurity-Certificat-Professionnel.png" class="img-fluid" alt="">
-                  <div class="portfolio-links">
-                    <a href="portfolio/img/diplômes%20-%20certifications/Google-Cybersecurity-Certificat-Professionnel.png" class="portfolio-lightbox" title="Certification Google Cybersecurity. <br> Obtenue en 2ème année de BTS SIO (Septembre 2023)."><i class="bi bi-eye-fill"></i> <h6>Détails</h6></a>
-                    <a href="portfolio/img/diplômes%20-%20certifications/Google-Cybersecurity-Certificat-Professionnel.pdf" target="_blank">
                       <i class="bi bi-download"></i> <h6>Ouvrir en PDF</h6>
                     </a>
                   </div>
@@ -837,7 +775,7 @@
           </div>
         </div>
         <br>
-        <section style="border-radius: 15px; background-image: url(portfolio/img/background/background.png); background-size: 100% auto;" class="portfolio section-bg">
+        <section style="border-radius: 15px; background-image: url(images/background.png); background-size: 100% auto;" class="portfolio section-bg">
           <div class="container">
             <div class="row" data-aos="fade-up">
               <div class="col-lg-12 d-flex justify-content-center">
@@ -983,7 +921,7 @@
         </div>
   
         <br>
-        <section style="border-radius: 15px; background-image: url(portfolio/img/background/background.png); background-size: 100% auto;" class="portfolio section-bg">
+        <section style="border-radius: 15px; background-image: url(images/background.png); background-size: 100% auto;" class="portfolio section-bg">
           <div class="container">
             <div class="row" data-aos="fade-up">
               <div class="col-lg-12 d-flex justify-content-center cours-complets">
